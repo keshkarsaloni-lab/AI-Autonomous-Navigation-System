@@ -1,34 +1,90 @@
-# 🚗 AI-Based Autonomous Navigation System
+## 🚗 AI-Based Autonomous Navigation System
 
-## 📌 Overview
-This project simulates an AI-based autonomous navigation system using a grid-based environment. It uses path planning algorithms to navigate from a start point to a goal while avoiding obstacles.
+## 📌 Project Overview
+
+The AI-Based Autonomous Navigation System is a simulation project that demonstrates how intelligent agents (like robots or self-driving vehicles) navigate from a start point to a destination while avoiding obstacles.
+
+The system uses a grid-based environment and implements the A* (A-Star) path planning algorithm to calculate the most efficient route.
 
 ---
 
 ## 🎯 Problem Statement
-Autonomous systems like robots and self-driving cars need to navigate safely in unknown environments. This project demonstrates how AI can solve navigation problems using path planning techniques.
+
+Autonomous systems must navigate safely in unknown or dynamic environments.
+
+Challenges include:
+
+- Finding the shortest path
+- Avoiding obstacles
+- Making real-time decisions
+
+This project addresses these challenges using AI-based path planning techniques.
 
 ---
 
-## 🧠 Features
+## 🌍 Industry Relevance
+
+This project has real-world applications in:
+
+- 🤖 Robotics navigation
+- 🚗 Self-driving cars
+- 📦 Warehouse automation (Amazon, Flipkart robots)
+- 🚁 Drone path planning
+- 🛰️ Autonomous exploration systems
+
+It demonstrates core concepts used in AI, robotics, and intelligent systems.
+
+---
+
+## 🧠 Key Features
+
 - Grid-based simulation environment
-- Obstacle avoidance
+- Obstacle avoidance system
 - A* path planning algorithm
-- Real-time visualization using pygame
-- Simple and beginner-friendly implementation
+- Real-time visualization using Pygame
+- Interactive start and end point selection
+- Efficient shortest path computation
 
 ---
 
 ## 🛠️ Tech Stack
-- Python
-- Pygame
-- NumPy
+
+- Programming Language: Python
+- Libraries: Pygame, NumPy
+- Concepts Used:
+  - Artificial Intelligence
+  - Path Planning Algorithms
+  - Graph Search (A*)
 
 ---
 
-## 🏗️ Project Structure
+## 🏗️ System Architecture
 
-```
+The system follows a modular architecture:
+
+1. Environment Module
+   
+   - Creates grid-based simulation
+   - Manages obstacles
+
+2. Path Planning Module
+   
+   - Implements A* algorithm
+   - Calculates optimal path
+
+3. Navigation Module
+   
+   - Controls agent movement
+   - Executes computed path
+
+4. Visualization Module
+   
+   - Displays simulation using Pygame
+
+---
+
+## 📁 Folder Structure
+
 AI-Autonomous-Navigation-System/
 │
 ├── simulation/
@@ -39,9 +95,8 @@ AI-Autonomous-Navigation-System/
 │   └── path_planning.py
 │
 ├── assets/
-|   └── screenshots/
-|       └── demo/
-│   
+│   └── screenshots/
+│       └── demo/
 │
 ├── outputs/
 │   ├── images/
@@ -54,242 +109,96 @@ AI-Autonomous-Navigation-System/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-```
 
 ---
 
 ## ⚙️ Installation
 
-```bash
-git clone <your-repo-link>
+git clone <https://github.com/keshkarsaloni-lab/AI-Autonomous-Navigation-System>
 cd AI-Autonomous-Navigation-System
 
 python -m venv venv
 venv\Scripts\activate
 
 pip install -r requirements.txt
-```
 
 ---
 
 ## ▶️ How to Run
 
-```bash
 python main.py
-```
-
----
-
-## 🎮 Controls
-- Left Click → Set Start and End point
-- Path is generated automatically after selecting points
-
----
-
-## 📸 Output
-
-### 🔹 Empty Grid
-![Empty Grid](assets/screenshots/empty.png)
-
-### 🔹 Start & End Selection
-![Start End](assets/screenshots/end.png)
-
-### 🔹 Final Path Output
-![Path](assets/screenshots/path.png)
-
----
-
-## 🚀 Future Improvements
-- Add dynamic obstacles
-- Integrate OpenCV for real-time detection
-- Upgrade to 3D simulation (CARLA)
-- Implement advanced AI algorithms
-
----
-
-## 🤖 Virtual Simulation Implementation
-
-### 📌 Simulator Used
-This project uses **Pygame**, a Python-based 2D simulation environment, to visualize autonomous navigation.
-
----
-
-### 🎯 Why Pygame?
-- Lightweight and beginner-friendly  
-- Easy grid-based visualization  
-- No need for real hardware  
-- Fast and interactive simulation  
-
----
-
-
-## 🗺️ Environment / Map
-
-The environment is a 2D grid system
-
-Each cell represents:
-
-- White → Free space
-
-- Black → Obstacle
-
-
-
-
----
-
-## 🤖 Virtual Agent (Robot)
-
-- Green cell → Start point
-
-- Red cell → Goal point
-
-- Agent moves automatically from start to goal
-
-
-
----
-
-## 🚧 Obstacle Placement
-
-- Obstacles are predefined in the grid
-
-- Represent blocked paths
-
-- Agent cannot pass through them
-
-
-
----
-
-## 🧠 AI Environment Reading
-
-- Grid stored as a 2D array (matrix)
-
-- 0 → Free space
-
-- 1 → Obstacle
-
-- Algorithm checks neighboring cells
-
-
-
----
-
-## 🛣️ Path Planning Algorithm
-
-- Uses A* (A-Star) algorithm
-
-- Calculates shortest and optimal path
-
-- Combines:
-
-- Actual cost (g)
-
-- Heuristic cost (h)
-
-
-
-
----
-
-## 🛑 Collision Avoidance
-
-- Avoids obstacle cells
-
-- Selects only valid paths
-
-- Ensures safe navigation
-
-
-
----
-
-## 🚶 Navigation Process
-
-- Path generated step-by-step
-
-- Agent follows computed path
-
-- Moves from start → end
-
-
-
----
-
-## 📊 Output Visualization
-
-🟩 Green → Start
-
-🟥 Red → End
-
-⬛ Black → Obstacles
-
-Path → Highlighted route
-
-
 
 ---
 
 ## 🔄 Simulation Workflow
 
 1. Run the program
-
-
-2. Select start point
-
-
-3. Select end point
-
-
-4. Path is generated automatically
-
-
-5. Agent moves to destination
-
-
-
+2. A grid environment is displayed
+3. Select start point (Green)
+4. Select end point (Red)
+5. Algorithm calculates shortest path
+6. Agent navigates automatically
+7. Final path is visualized
 
 ---
 
-## 📸 Screenshots (Proof)
+## 📊 Results
 
-- Empty grid
-
-- Start point selected
-
-- End point selected
-
-- Final path output
-
-
+- Successfully generated shortest path using A*
+- Efficient obstacle avoidance
+- Smooth real-time visualization
+- Accurate navigation from start to destination
 
 ---
 
-## 🎥 Video Recording
+## 📸 Screenshots
 
-- Simulation execution
+### 🔹 Empty Grid
 
-- Start to end navigation
+"Empty Grid" (assets/screenshots/empty.png)
 
-- Path movement visualization
+### 🔹 Start & End Selection
 
+"Start End" (assets/screenshots/end.png)
 
+### 🔹 Final Path Output
 
----
-
-## 📂 Output Files
-
-Screenshots → assets/screenshots/
-
-Videos → assets/screenshots/demo/
-
-
+"Path" (assets/screenshots/path.png)
 
 ---
 
-## ✅ Conclusion
+## 🚀 Future Improvements
 
-This project successfully demonstrates an AI-based autonomous navigation system using virtual simulation. It provides a strong foundation for real-world applications such as robotics and self-driving vehicles.
+- Add dynamic/moving obstacles
+- Integrate computer vision (OpenCV)
+- Upgrade to 3D simulation (CARLA)
+- Implement machine learning-based navigation
+- Real-world robot integration (ROS)
 
 ---
+
+## 📚 Learning Outcomes
+
+Through this project, I learned:
+
+- Implementation of A* path planning algorithm
+- Grid-based environment modeling
+- AI decision-making concepts
+- Simulation using Pygame
+- Git & GitHub workflow
+- Project structuring and documentation
+
+---
+
+## 👩‍💻 Author
+
+Saloni Keshkar
+
+- 🎓 Engineering Student (Electronics & Telecommunication)
+- 💡 Interested in AI, Robotics, and Intelligent Systems
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates how AI can be applied to real-world navigation problems. It serves as a strong foundation for advanced autonomous systems like self-driving vehicles and robotic navigation.
