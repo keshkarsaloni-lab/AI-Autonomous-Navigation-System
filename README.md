@@ -177,7 +177,7 @@ python main.py
 ## 📸 Screenshots
 
 ### 🔹 Empty Grid
-![Empty Grid](assets/screenshots/empty.png)
+![Empty Grid](assets/screenshots/empty_grid.png)
 
 ### 🔹 Start & End Selection
 ![Start End](assets/screenshots/end.png)
