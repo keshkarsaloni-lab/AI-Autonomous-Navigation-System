@@ -195,11 +195,11 @@ Each cell represents:
 
 ## 🛑 Collision Avoidance
 
-Avoids obstacle cells
+- Avoids obstacle cells
 
-Selects only valid paths
+- Selects only valid paths
 
-Ensures safe navigation
+- Ensures safe navigation
 
 
 
@@ -242,13 +242,10 @@ Path → Highlighted route
 3. Select end point
 
 
-4. Press SPACE
+4. Path is generated automatically
 
 
-5. Path is generated
-
-
-6. Agent moves to destination
+5. Agent moves to destination
 
 
 
@@ -271,11 +268,11 @@ Path → Highlighted route
 
 ## 🎥 Video Recording
 
-Simulation execution
+- Simulation execution
 
-Start to end navigation
+- Start to end navigation
 
-Path movement visualization
+- Path movement visualization
 
 
 
